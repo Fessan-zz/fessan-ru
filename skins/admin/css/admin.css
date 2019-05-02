@@ -1,0 +1,138 @@
+
+.modules_all{
+	max-width:992px;
+	padding:50px 0;
+	margin:auto;
+	}
+/* Это индекс тпл*/
+.nav-line{
+	max-width:992px;
+	margin:auto;
+	margin-bottom:25px;
+}
+
+.login{
+	color:black;;
+	font-size:18px;
+	float:right;
+	margin-top: -40px;
+}
+.login a{
+	color:#2aa7ff;
+}
+.my-nav a{
+	text-decoration:none;
+}
+.logo h1{
+	color:black;
+	}
+.logo{
+	max-width:150px;
+}
+
+.foter{
+	max-width:992px;
+	margin:auto;
+	margin-top:25px;
+}
+
+
+
+
+.clearfix:before, .clearfix:after{
+	content: " ";
+	display:table;
+}
+.clearfix:after{
+	clear:both;
+}
+/* Это для контента внутри*/
+
+.content_admin{
+	max-width:992px;
+	margin-left:200px;
+}
+.input_com{
+	width:992px;
+	height:100px;
+}
+
+.nav_admin{
+	float:left;
+	max-width:150px;
+	padding-bottom:25px;
+	padding-top:25px;
+	padding-left:25px;
+	padding-right:25px;
+
+}
+.nav_admin a{
+	color:#0b2e1f;
+}
+.shop{
+	border:1px solid grey;
+	font-size:18px;
+	padding-top:25px;
+	padding-bottom:25px;
+}
+
+.shop_div{
+	text-align:center;
+	font-size:22px;
+	margin-bottom:25px;
+}
+.shop_a{
+	font-size:20px;
+
+	text-decoration:none;
+	color: #2aa7ff
+}
+.span_err{
+	color:red;
+}
+
+/*  НОВОСТИ */
+
+.news_a{
+	text-decoration:none;
+	color:#2aa7ff;
+	margin-bottom:25px;
+	max-width:255px;
+}
+
+.news_img{
+	margin-top: 25px;
+	max-width:500px;
+}
+.news_title{
+
+	font-size:25px;
+}
+.news_des{
+	margin-top: 50px;
+	max-width: 400px;
+	font-size: 20px;
+	float:right;
+}
+.news_text{
+	text-indent:15px;
+}
+.news_menu{
+	float: left;
+	margin-left: 50px;
+	font-size: 20px;
+	margin-bottom: 25px;
+
+}
+/* книги  и авторы */
+.book_desk{
+float:right;
+
+}
+.book{
+	max-width:400px;
+}
+.book_author{
+	font-size:20px;
+	margin-bottom:15px;
+}
