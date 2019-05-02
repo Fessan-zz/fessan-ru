@@ -5,354 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ed3bc90-cd2e-4ed6-beba-df32363ba5eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Fessan.ru.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/fessa.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/auth.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/game.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/but-1-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/but-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/but-2-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/but-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/dir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/dot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/fb,png.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/fb2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/file.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/google.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/google2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/img-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/img-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/img-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/img1-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/img1-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/img1-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/in.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/in2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/inst.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/inst2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/menu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/menu2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/notbut-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/page01_img01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/page01_img02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/page01_img03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/page01_img04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/sprite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tw2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/class_Mail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/class_Upload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/default.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/mysql.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/php.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/allpages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/assortment/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/assortment/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/assortment/good.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/assortment/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/books/addauthor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/books/addbook.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/books/author.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/books/book.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/books/books.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/books/editauthor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/books/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/info/admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/info/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/news/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/news/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/news/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/news/new.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/static/contacts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/static/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/users/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/admin/users/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/allpages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/assortment/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/assortment/edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/assortment/good.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/assortment/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/auth/exit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/auth/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/book/author.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/book/book.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/book/books.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/book/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cab/activate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cab/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cab/exit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cab/reg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cab/user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/comments/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/errors/404.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/file/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/game/gameover.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/game/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/news/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/news/new.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/static/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/staticpage/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/assortment/add.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/assortment/edit.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/assortment/good.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/assortment/main.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/books/addauthor.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/books/addbook.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/books/author.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/books/book.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/books/books.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/books/editauthor.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/books/main.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/css/admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/index.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/info/admin.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/info/main.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/news/add.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/news/edit.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/news/main.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/news/new.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/static/main.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/users/edit.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/admin/users/main.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/assortment/good.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/assortment/main.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/auth/exit.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/auth/main.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/book/author.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/book/book.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/book/books.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/book/main.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/cab/activate.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/cab/auth.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/cab/exit.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/cab/reg.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/cab/user.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/comments/main.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/errors/404.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/file/main.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/game/gameover.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/game/main.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/index.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/news/main.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/news/new.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/static/main.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skins/default/staticpage/main.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190130-114638img63947.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190130-114828img9143.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190130-115527img73121.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190130-115622img51271.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190130-115934img37948.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190130-120029img3863.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190130-120057img23091.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190130-120109img19645.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190130-120123img52907.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190130-120137img4710.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190130-120150img85546.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190130-162010img7356.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190130-213218img85119.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190130-213436img82194.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190130-213529img79414.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190130-215217img82309.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190130-215321img72077.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190130-215623img25151.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-062032img27953.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-114118img17754.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-114254img75897.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-114320img10632.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-114357img10744.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-114445img13231.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-114529img61937.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-114622img33062.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-115148img61086.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-120226img26824.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-122102img26530.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-155440img27491.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-160250img59997.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-160920img6395.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-170800img88466.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-171512img78732.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-171916img54810.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-172524img89996.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-210232img61365.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-210251img42645.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-211216img67506.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-212151img32677.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-212328img33476.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-212404img56297.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-213236img86510.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190131-213300img32092.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190201-124041img57975.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190204-114415img16638.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-103145img56534.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-103415img41650.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-103813img79673.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-104107img29142.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-104548img18751.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-104635img20598.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-104934img47665.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-105016img5716.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-105155img53270.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-105219img85567.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-105228img36229.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-105353img47143.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-105452img15904.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-105850img21030.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-105859img16049.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-120158img30179.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-120244img62182.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-120725img51120.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-120736img11828.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-121749img24616.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-121931img44797.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-122040img17191.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-122152img55928.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-122254img89152.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-122338img57427.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-122448img58950.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-122528img61566.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-122604img80599.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-130014img78203.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-130023img35258.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-130040img42394.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190207-180408img89574.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190208-081314img28307.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190208-085119img75108.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190208-093648img50059.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190208-093952img27136.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190208-094015img80906.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190208-125440img24466.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190208-125457img71657.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190208-125529img87043.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190208-125546img55486.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-101243img7638.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-101618img51014.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-102438img31965.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-102516img16527.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-114641img32245.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-115614img64957.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-115632img3082.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-132152img72352.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-132317img18081.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-132643img67135.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-133116img15492.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-133344img8625.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-133417img36204.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-134123img52429.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-134142img12142.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-134200img12612.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-134219img14120.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-134324img9766.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-134344img12922.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-134401img75963.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-134413img41579.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-134846img28896.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-170211img38251.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-170244img23287.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-170300img12088.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-170532img76467.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-170613img28979.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-170834img48123.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-171148img43789.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-171410img74017.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190209-171429img38994.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190210-160041img26486.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190210-173713img46328.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190210-173722img82344.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190211-181029img14147.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190211-181459img85090.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190211-182236img26140.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190211-182307img50081.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190211-182332img17492.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190211-182349img84042.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190211-183250img53821.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190211-183309img89369.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190211-183322img75007.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190211-183336img75082.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190211-183353img67651.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190211-183407img40920.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190211-184729img14359.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-041915img56596.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-112006img7088.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-112018img8473.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-112031img7476.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-113101img7875.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-113109img5021.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-113117img8870.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-113122img2667.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-113139img1413.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-113154img7205.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-113355img7380.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-113425img1946.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-113432img6776.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-113839img4640.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-114548img1705.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-114634img5868.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-114657img4450.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-114755img3641.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-114908img4044.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-114951img8459.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-115307img2212.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-115632img1903.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-115642img8123.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-140247img4192.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-140353img6451.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190425-140706img8986.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190428-082747img8584.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190428-082900img2998.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190429-175046img4411.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190429-180452img6994.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190429-180707img6311.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190429-180707img7029.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190429-180815img1312.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190429-180815img3494.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190429-180840img8887.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190429-180840img8979.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190429-181438img5760.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190429-181438img8153.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190429-181630img6978.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190429-183301img2231.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190429-183301img8615.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190429-184416img3457.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190429-184416img8592.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-123338img3411.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-124357img6482.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-125308img2954.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-125544img1630.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-125614img2490.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-125614img5708.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-125700img4479.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-125700img5450.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-130006img5779.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-130006img8422.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-130425img3011.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-130425img4837.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-130457img1600.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-130457img8334.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-131627img4997.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-131652img1597.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-132013img1815.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-132905img7654.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-133025img2884.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-133054img8695.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/20190502-133409img1545.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/variables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -718,12 +371,20 @@
       <workItem from="1556434638789" duration="31000" />
       <workItem from="1556783861698" duration="216000" />
       <workItem from="1556784079186" duration="10425000" />
-      <workItem from="1556799888729" duration="267000" />
+      <workItem from="1556799888729" duration="1753000" />
     </task>
+    <task id="LOCAL-00001" summary="new">
+      <created>1556800818524</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1556800818524</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="578074000" />
+    <option name="totallyTimeSpent" value="579560000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -737,9 +398,10 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49932706" visible="true" weight="0.1818766" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49932706" visible="true" weight="0.1818766" />
       <window_info id="Structure" order="1" sideWeight="0.50067294" side_tool="true" weight="0.13239075" />
       <window_info id="Favorites" order="2" sideWeight="0.50067294" side_tool="true" weight="0.13239075" />
+      <window_info anchor="bottom" id="Messages" weight="0.32974428" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32839838" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -749,7 +411,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32974428" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32974428" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32839838" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="12" />
@@ -761,6 +423,11 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="new" />
+    <option name="LAST_COMMIT_MESSAGE" value="new" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/modules/admin/assortment/main.php">
@@ -803,13 +470,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skins/admin/books/main_old.tpl" />
-    <entry file="file://$PROJECT_DIR$/skins/admin/books/author.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/admin/books/book.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-87">
@@ -1061,6 +721,13 @@
     <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/.idea/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skins/admin/books/author.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
