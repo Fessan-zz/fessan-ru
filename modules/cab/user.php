@@ -18,13 +18,27 @@ if(isset($_POST['ok'], $_POST['email'], $_POST['age'])) {
 
 
  // 	$name = imgResize($_FILES,100,100);
-		if(!Upload::uploader($_FILES) ){
-			$errors = Upload::$error;
-		}
-		else {
-		 $name = Upload::resize(100,100);
+	//	if(!Upload::uploader($_FILES)){
+	//		$errors= Upload::$error;
+	//	}else {
+	//	     Upload::resize(100,100);
+	//		$name = Upload::$name;
+	//			}
 
-		}
+//	Upload::uploader($_FILES);
+//	Upload::resize(100,100);
+//	$name = Upload::$name;
+
+	 Upload::uploader($_FILES);
+	if(Upload::$error){
+		$errors=Upload::$error;
+	}else {
+	 $name = Upload::resize(100,100);
+
+	}
+
+
+
 
 
 
