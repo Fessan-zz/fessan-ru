@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* AUTH*/
+
+.form {
+	text-align:center;
+	max-width:250px;
+	margin:auto;
+	font-size:18px;
+}
+input{
+	font-size:18px;
+}
+
+.reg{
+	text-align:center;
+	font-size:22px;
+}
+
+.button_auth{
+	text-decoration:none;
+	color:black;
+	background-color:red;
+	display:inline-block;
+	border:1px solid black;
+}
+
+
+.del{
+	font-size:18px;
+}
+.del2{
+	text-decoration:none;
+	color:royalblue;;
+
+}
+
+
+
+
+
+/*  Это регистрация*/
+.reg2{
+	width:550px;
+	margin:auto;
+}
+
+.p_reg{
+	font-size:10px;
+}
+
+
+/*           GAME    */
+
+
+
+
+.form_game {
+
+	text-align:center;
+	max-width:350px;
+	font-size:18px;
+}
+input{
+	font-size:18px;
+}
+
+.text_game{
+	text-align:center;
+	font-size:18px;
+	padding-top:150px;
+
+}
+/* all */
+
+.modules_all{
+	max-width:992px;
+	padding:150px 0;
+	margin:auto;
+}
+
+
+
+/* comments*/
+
+.comments_login{
+	font-size:18px;
+
+}
+
+.comments_date{
+font-size:17px;
+
+}
+.comments{
+	word-wrap:break-word;
+	padding:15px;
+	text-align:justify;
+	border:1px solid grey;
+	border-radius:8px;
+	font-size:17px;
+	margin-bottom:15px;
+}
+
+
+.com_log_text{
+	max-width:80px;
+	margin-right:146px;
+}
+
+.com_email_text{
+	max-width:80px;
+	margin-right:150px;
+}
+.input_com{
+	width:992px;
+	height:200px;
+}
+.span_text {
+	font-weight:bolder;
+	font-size:12px;
+}
+.comments_form{
+	padding-top:150px;
+}
+/*     SHOP */
+
+.shop{
+	border:1px solid grey;
+	font-size:18px;
+	padding-top:25px;
+	padding-bottom:25px;
+}
+
+.shop_div{
+	text-align:center;
+	font-size:22px;
+	margin-bottom:25px;
+}
+.shop_a{
+	font-size:20px;
+
+	text-decoration:none;
+	color: #2aa7ff
+}
+.span_err{
+	color:red;
+}
+
+/*      news!!!!     */
+
+.news_a{
+	text-decoration:none;
+	color:#2aa7ff;
+	margin-bottom:25px;
+	max-width:255px;
+}
+
+.news_img{
+	margin-top: 25px;
+	max-width:500px;
+}
+.news_title{
+
+	font-size:25px;
+}
+.news_des{
+	margin-top: 50px;
+	max-width: 400px;
+	font-size: 20px;
+	float:right;
+}
+.news_text{
+	text-indent:15px;
+}
+.news_menu{
+	float: left;
+	margin-left: 50px;
+	font-size: 20px;
+	margin-bottom: 25px;
+
+}
+
+
+/*      books!!!!     */
+
+.book{
+	max-width:400px;
+	border:black;
+}
+
+.book_author{
+	font-size:20px;
+	max-width:400px;
+}
