@@ -30,11 +30,6 @@ if(isset($id)) {
 }
 
 
-
-
-
-
-
 if(!$author->num_rows){
 
 	$_SESSION['info'] = 'Данного автора не существует!';

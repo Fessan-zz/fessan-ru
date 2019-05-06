@@ -11,12 +11,10 @@ class Upload {
 		$array = ['image/gif', 'image/jpg', 'image/png', 'image/jpeg'];
 		$array2 = ['jpg', 'gif', 'png', 'jpeg'];
 		if($file['file']['error'] == 4){
-			return true;
+			return false;
 		}
-		if($file['file']['error'] != 0) {
-			self::$error['img'] = 'Вы не загрузули файл';
-		}
-		elseif($file['file']['size'] < 500 OR $file['file']['size'] > 50000000) {
+
+		elseif($file['file']['size'] < 5000 OR $file['file']['size'] > 50000000) {
 			self::$error['img']= 'Размер изображения не подходит';
 		}
 		else {
@@ -42,7 +40,7 @@ class Upload {
 
 	}
 
-	public static function resize($file,$newwidht = false,$newheight=false){
+	public static function resize($newwidht = false,$newheight=false){
 
 
 		$oldwidth = self::$temp['0'];// размер исходника

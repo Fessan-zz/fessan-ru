@@ -22,7 +22,7 @@ if(isset($_POST['ok'], $_POST['email'], $_POST['age'])) {
 			$errors = Upload::$error;
 		}
 		else {
-		 $name = Upload::resize($_FILES,100,100);
+		 $name = Upload::resize(100,100);
 
 		}
 

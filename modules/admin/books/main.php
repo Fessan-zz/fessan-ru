@@ -37,36 +37,7 @@ $author = q("
 ");
 
 
-/*
-foreach($authors1 as $v){
-	$author_ids[] =$v['id'];
-}
 
-$books2books2 =q("
-SELECT *	
-FROM `books2books_author`
-ORDER BY `id` 
-
-
-");
-while($book2 = $books2books2->fetch_assoc()){
-	$book3[] =$book2;
-}
-
-foreach($book3 as $v){
-	$book_ids[] = $v['book_id'];
-}
-
-$books= q("
- SELECT *
- FROM `books`
-ORDER BY `id` 
-");
-
-while($books2=$books->fetch_assoc()){
-	$books3[] = $books2;
-}
-*/
 DB::close();
 
 if(isset($_SESSION['info'])) {

@@ -20,7 +20,7 @@ if(isset($_POST['delete'])) {
 
 
 
-if(isset($_GET['key2'],$_GET['key3']) && $_GET['key2'] == 'delete'){
+if(isset($_GET['key2'],$_GET['key3']) & $_GET['key2'] == 'delete'){
 	q( "
 	DELETE FROM `books`
     WHERE `id` = ".(int)$_GET['key3']."

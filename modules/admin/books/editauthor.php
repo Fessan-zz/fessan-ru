@@ -23,13 +23,13 @@ if(isset($_POST['ok'], $_POST['name'], $_POST['age'], $_POST['cat'], $_POST['des
 	if(empty($_POST['biografi'])) {
 		$errors['biografi'] = 'Вы не заполнили биография автора';
 	}
+	// добавление изображения
 
 	if(!Upload::uploader($_FILES)){
 		$errors= Upload::$error;
 	}else {
 		$name = Upload::resize($_FILES,100,100);
 	}
-	// добавление изображения
 
 	if(!count($errors)) {
 		q("
