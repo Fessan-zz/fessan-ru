@@ -6,6 +6,7 @@
 	if(isset($_SESSION['user']['id']) && $_SESSION['user']['id'] == $_GET['key1']){
 
 	echo @$_SESSION['info'];
+	unset($_SESSION['info'])
 	?>
 <br>
 	<img src="<?php echo $row['avatar'] ?>">
@@ -53,7 +54,9 @@
 				?><br> </span>
 		</div>
 		<input type="file" name="file" accept="image/png,image/jpg,image/gif,image/jpeg" >
-		<?php echo @$errors['img'];?>
+		<?php echo @$errors['img'];
+
+		?>
 		<br>
 
 

@@ -18,8 +18,8 @@ if(isset($_POST['ok'], $_POST['email'], $_POST['age'])) {
 
 
  // 	$name = imgResize($_FILES,100,100);
-		if(!isset($row['avatar']) && !Upload::uploader($_FILES) ){
-			$errors['img'] = Upload::$error;
+		if(!Upload::uploader($_FILES) ){
+			$errors = Upload::$error;
 		}
 		else {
 		 $name = Upload::resize($_FILES,100,100);
@@ -46,7 +46,7 @@ if(isset($_POST['ok'], $_POST['email'], $_POST['age'])) {
 	if(!count($errors)) {
 
 
-		if(!count($errors) && !empty($name)) {
+		if(!count($errors) & !empty($name)) {
 			q("
 		UPDATE `users` SET
 		`avatar`       = '".es($name)."'

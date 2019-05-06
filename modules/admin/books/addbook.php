@@ -26,7 +26,7 @@ if(isset($_POST['add'], $_POST['name'], $_POST['description'], $_POST['coast'], 
 		$errors['author'] = 'Вы не указали автора книги';
 	}
 	if(!Upload::uploader($_FILES)){
-		$errors['img'] = Upload::$error;
+		$errors= Upload::$error;
 	}else {
 		$name = Upload::resize($_FILES,150,200);
 	}

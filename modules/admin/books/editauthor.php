@@ -25,7 +25,7 @@ if(isset($_POST['ok'], $_POST['name'], $_POST['age'], $_POST['cat'], $_POST['des
 	}
 
 	if(!Upload::uploader($_FILES)){
-		$errors['img'] = Upload::$error;
+		$errors= Upload::$error;
 	}else {
 		$name = Upload::resize($_FILES,100,100);
 	}

@@ -10,11 +10,14 @@ class Upload {
 	public static function uploader($file) {
 		$array = ['image/gif', 'image/jpg', 'image/png', 'image/jpeg'];
 		$array2 = ['jpg', 'gif', 'png', 'jpeg'];
+		if($file['file']['error'] == 4){
+			return true;
+		}
 		if($file['file']['error'] != 0) {
-			self::$error = 'Вы не загрузули файл';
+			self::$error['img'] = 'Вы не загрузули файл';
 		}
 		elseif($file['file']['size'] < 500 OR $file['file']['size'] > 50000000) {
-			self::$error= 'Размер изображения не подходит';
+			self::$error['img']= 'Размер изображения не подходит';
 		}
 		else {
 			self::$temp = getimagesize($file['file']['tmp_name']);
@@ -25,17 +28,18 @@ class Upload {
 				$matches[1] = strtolower($matches[1]);
 
 				if(!in_array($matches[1], $array2)) {
-					self::$error = 'Не подходит расширение файла';
+					self::$error['img'] = 'Не подходит расширение файла';
 				}
 				elseif(!in_array(self::$temp['mime'], $array)) {
-					self::$error= 'Не подходит тип файла';
+					self::$error['img']= 'Не подходит тип файла';
 				}
 				elseif(!move_uploaded_file($file['file']['tmp_name'], '.'.self::$name)) {
-					self::$error = 'Изображение нет';
+					self::$error['img'] = 'Изображение нет';
 				} return true;
 			}else{
-				self::$error = 'Данный файл не является картинкой';}
+				self::$error['img'] = 'Данный файл не является картинкой';}
 		}
+
 	}
 
 	public static function resize($file,$newwidht = false,$newheight=false){
@@ -62,7 +66,7 @@ class Upload {
 		elseif(self::$temp['mime'] == 'image/png') {                    //
 			$new_img = imagecreatefrompng('.'.self::$name);    //
 		}
-		else self::$error = 'ошибка создания файла';
+		else self::$error['img'] = 'ошибка создания файла';
 		imagecopyresampled($tmp, $new_img, 0, 0, 0, 0, $newwidht, $newheight, $oldwidth, $oldheight);
 
 

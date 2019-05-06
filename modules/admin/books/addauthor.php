@@ -26,7 +26,7 @@ if(isset($_POST['add'], $_POST['name'], $_POST['age'], $_POST['cat'], $_POST['de
 
 	// добавление изображения
 	if(!Upload::uploader($_FILES)){
-		$errors['img'] = Upload::$error;
+		$errors= Upload::$error;
 	}else {
 		$name = Upload::resize($_FILES,100,100);
 	}
