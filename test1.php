@@ -1,80 +1,104 @@
 <?php
 
-class Upload {
+Core::$META['title'] = 'Страница пользователя';
 
+if(isset($_POST['submit'], $_POST['email'], $_POST['age'])) {
 
-	public static $name = '';
-	public static $temp = '';
-	public static $error = [];
+	foreach($_POST as $k => $v) {
+		$_POST[$k] = trim($v);
+	}
+	$errors = [];
 
-	public static function uploader($file) {
-		$array = ['image/gif', 'image/jpg', 'image/png', 'image/jpeg'];
-		$array2 = ['jpg', 'gif', 'png', 'jpeg'];
-		if($file['file']['error'] == 4){
-			return false;
-		}
-
-		elseif($file['file']['size'] < 5000 OR $file['file']['size'] > 50000000) {
-			self::$error['img']= 'Размер изображения не подходит';
-		}
-		else {
-			self::$temp = getimagesize($file['file']['tmp_name']);
-			self::$name = '/upload/'.date('Ymd-His').'img'.rand(1000, 9000).'.jpg';
-
-			preg_match('#\.([a-z]+)$#iu', $file['file']['name'], $matches);
-			if(isset($matches[1])) {
-				$matches[1] = strtolower($matches[1]);
-
-				if(!in_array($matches[1], $array2)) {
-					self::$error['img'] = 'Не подходит расширение файла';
-				}
-				elseif(!in_array(self::$temp['mime'], $array)) {
-					self::$error['img']= 'Не подходит тип файла';
-				}
-				elseif(!move_uploaded_file($file['file']['tmp_name'], '.'.self::$name)) {
-					self::$error['img'] = 'Изображение нет';
-				} return true;
-			}else{
-				self::$error['img'] = 'Данный файл не является картинкой';}
-		}
-
+	if(mb_strlen($_POST['password']) < 5 and !empty($_POST['password'])) {
+		$errors['password'] = 'Пароль должен быть длинее 4х символов';
+	}
+	if(empty($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+		$errors['email'] = 'Вы не заполнили email';
 	}
 
-	public static function resize($newwidht = false,$newheight=false){
 
 
-		$oldwidth = self::$temp['0'];// размер исходника
-		$oldheight = self::$temp['1'];//размер исходника
 
-		if(!$newheight){
-			$newheight = $newwidht/($oldwidth/$oldheight);
+	//	Upload::uploader($_FILES);
+	//	Upload::resize(100,100);
+	//	$name = Upload::$name;
+	/*
+	if($_FILES['file']['error'] == 0){
+		$errors = Upload::$error;
+		if(!isset($errors)) {
+
+			Upload::uploader($_FILES);
+			Upload::resize(100, 100);
+			$name = Upload::$name;
 		}
-		if(!$newwidht){
-			$newwidht = $newheight/($oldheight/$oldwidth);
 		}
 
+	*/
+	if(!count($errors)) {
 
-		$tmp = imagecreatetruecolor($newwidht, $newheight);        //создается картинка по соотношению сторон???????
-		if(self::$temp['mime'] == 'image/jpeg') {                    //
-			$new_img = imagecreatefromjpeg('.'.self::$name);// создает картинку с адреса где лежит файл
+		$res = q("
+		SELECT `id`
+		FROM `users`
+		WHERE `email` = '".trimALL(es($_POST['email']))."'
+		AND  NOT `id` = ".(int)$_GET['key1']."
+		LIMIT 1
+		");
+		if($res->num_rows) {
+			$errors['email'] = 'Такой email уже существует';
+			$_SESSION['info'] = 'Ошибка!Такой email уже существует';
 		}
-		elseif(self::$temp['mime'] == 'image/gif') {                    //
-			$new_img = imagecreatefromgif('.'.self::$name); //
-		}
-		elseif(self::$temp['mime'] == 'image/png') {                    //
-			$new_img = imagecreatefrompng('.'.self::$name);    //
-		}
-		else self::$error['img'] = 'ошибка создания файла';
-		imagecopyresampled($tmp, $new_img, 0, 0, 0, 0, $newwidht, $newheight, $oldwidth, $oldheight);
-
-
-		imagejpeg($tmp, '.'.self::$name, 100); // создает новую картинку
-		imagedestroy($tmp);//
-		return self::$name;
-
 	}
 
+	if(!count($errors)) {
+
+
+		if(!count($errors) & !empty($name)) {
+			q("
+		UPDATE `users` SET
+		`avatar`       = '".es($name)."'
+		WHERE `id`     = ".(int)$_GET['key1']."
+		");
+		}
+		if(!count($errors) && !empty($_POST['password'])) {
+			q("
+			UPDATE `users` SET 
+			`password`		    = '".trimALL(es(myHash($_POST['password'])))."'
+			WHERE `id`          = ".(int)$_GET['key1']."
+			");
+		}
+		if(!count($errors) && !empty($_POST['email'])) {
+			q("
+			UPDATE `users` SET 
+			`email`		    	= '".es($_POST['email'])."'
+			WHERE `id`          = ".(int)$_GET['key1']."
+			");
+		}
+		if(!count($errors) && !empty($_POST['age'])) {
+			q("
+			UPDATE `users` SET 
+			`age` 		    	= '".(int)$_POST['age']."'
+			WHERE `id`          = ".(int)$_GET['key1']."
+			");
+		}
+		$_SESSION['info'] = 'Запись была изменена';
+		header('Location:/cab/user/'.$_GET['key1']);
+		exit();
+	}
 }
 
+$users = q("
+	SELECT *
+	FROM `users`
+	WHERE `id` = ".(int)$_GET['key1']."
+  	LIMIT 1
+");
+$row = $users->fetch_assoc();
 
+if(!$users->num_rows) {
+
+	$_SESSION['info'] = 'Данного пользователя не существует!';
+	header('Location:/');
+	exit();
+}
+DB::close();
 

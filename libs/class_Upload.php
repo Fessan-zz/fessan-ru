@@ -6,11 +6,21 @@ class Upload {
 	public static $name = '';
 	public static $temp = '';
 
+
+	/*
+	 * 	if($file['file']['error'] == 4){
+			return false;
+		}
+	 *
+	 *
+	 */
+
+
+
 	public static function uploader($file) {
 		$array = ['image/gif', 'image/jpg', 'image/png', 'image/jpeg'];
 		$array2 = ['jpg', 'gif', 'png', 'jpeg'];
 		if($file['file']['error'] != 4) {
-
 			if($file['file']['error'] != 0) {
 				self::$error['img'] = 'Вы не загрузули файл';
 			}
@@ -32,17 +42,16 @@ class Upload {
 					}
 					elseif(!move_uploaded_file($file['file']['tmp_name'], '.'.self::$name)) {
 						self::$error = 'Изображение нет';
-					}
+					}// else true ;
 				}
 			}
 		}
 	}
-
 		public static function resize($newwidht = false,$newheight=false){
 
 
-			$oldwidth = self::$temp['0'];// размер исходника
-			$oldheight = self::$temp['1'];//размер исходника
+			$oldwidth = self::$temp[0];// размер исходника
+			$oldheight = self::$temp[1];//размер исходника
 
 			if(!$newheight){
 				$newheight = $newwidht/($oldwidth/$oldheight);

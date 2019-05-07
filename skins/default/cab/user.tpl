@@ -20,8 +20,8 @@
 
 		<table>
 			<tr>
-				<td width="200">Логин :</td>
-				<td><?php echo  hc($row['login']); ?> </td>
+				<td width="200"> Логин :</td>
+				<td><b><?php echo  hc($row['login']); ?></b> </td>
 			</tr>
 			<tr>
 				<td>Введите новый  пароль :</td>
@@ -60,7 +60,7 @@
 		<br>
 
 
-		<input type="submit" name="ok" value="Отредактировать Пользователя"><br>
+		<input type="submit" name="submit" value="Отредактировать Пользователя"><br>
 	</form>
 <a href="/cab/exit">Сменить пользователя</a>
 
