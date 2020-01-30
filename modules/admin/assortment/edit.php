@@ -19,11 +19,16 @@ if(isset($_POST['add'], $_POST['title'],$_POST['code'],$_POST['nal'],$_POST['cat
 	foreach($_POST as $k =>$v){
 		$_POST[$k] = trim($v);
 	}
-	if(!Upload::uploader($_FILES)){
-		$errors['img'] = Upload::$error;
-	}else {
-		$name = Upload::resize($_FILES,400);
+	if(!count($errors)) {
+		Upload::uploader($_FILES);
+		if(!Upload::$error) {
+			$file = Upload::resize(400);
+		}
+		else {
+			$errors = Upload::$error;
+		}
 	}
+
 
 
 	if(!count($errors)) {
@@ -40,10 +45,10 @@ if(isset($_POST['add'], $_POST['title'],$_POST['code'],$_POST['nal'],$_POST['cat
   		LIMIT 1
 	 ") ;
 
-		if(!count($errors) && !empty($name)) {
+		if(!count($errors) && !empty($file)) {
 			q("
 			UPDATE `assortment` SET
-			`img`     = '".es($name)."'
+			`img`     = '".es($file)."'
 			WHERE `id`     = ".(int)$_GET['key2']."
 			
 			");

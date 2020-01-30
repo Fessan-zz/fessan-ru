@@ -11,7 +11,7 @@ $users = q("
 ");
 $row = $users->fetch_assoc();
 
-if(isset($_POST['add']) && (isset($_POST) or isset($_POST['password']) or isset($_POST['email']) or isset($_POST['age']) or isset($_POST['access'])) ) {
+if(isset($_POST['add']) && (isset($_POST['password']) or isset($_POST['email']) or isset($_POST['age']) or isset($_POST['access'])) ) {
 	foreach($_POST as $k => $v) {
 		$_POST[$k] = trim($v);
 	}
@@ -56,7 +56,7 @@ if(isset($_POST['add']) && (isset($_POST) or isset($_POST['password']) or isset(
 
 	if(!count($errors)) {
 
-		if(!count($errors) && ($_POST['login'] != $row['login'])) {
+		if($_POST['login'] != $row['login']) {
 			q("
 			UPDATE `users` SET
 			`login` 			= '".trimALL(es($_POST['login']))."'
@@ -64,7 +64,7 @@ if(isset($_POST['add']) && (isset($_POST) or isset($_POST['password']) or isset(
 			");
 			$_SESSION['info'] = 'Логин был изменен';
 		}
-		if(!count($errors) && !empty($_POST['password'])) {
+		if(!empty($_POST['password'])) {
 			q("
 			UPDATE `users` SET 
 			`password`		    = '".trimALL(es(myHash($_POST['password'])))."'
@@ -72,7 +72,7 @@ if(isset($_POST['add']) && (isset($_POST) or isset($_POST['password']) or isset(
 			");
 			$_SESSION['info'] = 'Пароль был изменен';
 		}
-		if(!count($errors) && ($_POST['email'] != $row['email'])) {
+		if($_POST['email'] != $row['email']) {
 			q("
 			UPDATE `users` SET 
 			`email`		    	= '".es($_POST['email'])."'
@@ -80,7 +80,7 @@ if(isset($_POST['add']) && (isset($_POST) or isset($_POST['password']) or isset(
 			");
 			$_SESSION['info'] = 'Почта была изменена';
 		}
-		if(!count($errors) && ($_POST['age'] != $row['age'])) {
+		if($_POST['age'] != $row['age']) {
 			q("
 			UPDATE `users` SET 
 			`age` 		    	= '".es($_POST['age'])."'
@@ -88,7 +88,7 @@ if(isset($_POST['add']) && (isset($_POST) or isset($_POST['password']) or isset(
 			");
 			$_SESSION['info'] = 'Возраст был изменен';
 		}
-		if(!count($errors) && ($_POST['access'] != $row['access'])) {
+		if($_POST['access'] != $row['access']) {
 			q("
 			UPDATE `users` SET
 			`access`           = '".es($_POST['access'])."'
@@ -96,7 +96,13 @@ if(isset($_POST['add']) && (isset($_POST) or isset($_POST['password']) or isset(
 			");
 			$_SESSION['info'] = 'Права доступа изменены';
 		}
-
+		if(isset($_POST['del_ava'])){
+			q("
+				UPDATE `users` SET
+				`avatar` = ''
+				WHERE `id` = ".(int)$_GET['key2']."
+			");
+		}
 
 		header('Location: /admin/users/edit/'.$_GET['key2']);
 		exit();

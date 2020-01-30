@@ -1,4 +1,5 @@
 <?php
+
 $book = q("
 	SELECT *
 	FROM `books`
@@ -6,9 +7,7 @@ $book = q("
   	LIMIT 1
 ") ;
 
-
 $row = $book->fetch_assoc();
-
 
 $res = q("
   SELECT *
@@ -16,20 +15,17 @@ $res = q("
   WHERE `book_id` = ".(int)$row['id']."
 ");
 
-
 while($res2=$res->fetch_assoc()){
 	$id[]=$res2['author_id'];
 }
 
-
-
-$q=  q("
+    $q=  q("
  SELECT *
  FROM `books_author`
- WHERE `id` IN (".implode(" ,",$id).")
+ WHERE `id` IN (".implode(",", $id).")
 ");
 
-
+//	$row2 = $q->fetch_assoc();
 
 if(!$book->num_rows){
 

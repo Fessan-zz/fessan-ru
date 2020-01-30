@@ -22,11 +22,16 @@ if(isset($_POST['add'], $_POST['title'], $_POST['code'], $_POST['nal'], $_POST['
 	foreach($_POST as $k => $v) {
 		$_POST[$k] = trim($v);
 	}
-	if(!Upload::uploader($_FILES)){
-		$errors['img'] = Upload::$error;
-	}else {
-		$name = Upload::resize($_FILES,400);
+	if(!count($errors)) {
+		Upload::uploader($_FILES);
+		if(!Upload::$error) {
+			$file = Upload::resize(400);
+		}
+		else {
+			$errors = Upload::$error;
+		}
 	}
+
 
 
 
@@ -41,7 +46,7 @@ if(isset($_POST['add'], $_POST['title'], $_POST['code'], $_POST['nal'], $_POST['
 	  `price`       = ".trimALL((int)$_POST['price']).",
 	  `description` = '".trimALL(es($_POST['description']))."',
 	  `text`        = '".trimALL(es($_POST['text']))."',
-	  `img`			= '".trimALL(es($name))."'
+	  `img`			= '".trimALL(es($file))."'
 	  
 	 ");
 		DB::close();

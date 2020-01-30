@@ -39,8 +39,9 @@ if(isset($_GET['cat'])){
 	FROM `news_cat`
 	WHERE `id` = '1'
 ");
-		$row = $res->fetch_assoc();
-		$news = q("
+	$row = $res->fetch_assoc();
+
+	$news = q("
 	SELECT *
 	FROM `news`
 	WHERE `cat` = '".$row['name']."'
@@ -52,21 +53,21 @@ if(isset($_GET['cat'])){
 	FROM `news_cat`
 	WHERE `id` = '2'
 ");
-		$row = $res->fetch_assoc();
-		$news = q("
+	$row = $res->fetch_assoc();
+	$news = q("
 	SELECT *
 	FROM `news`
 	WHERE `cat` = '".$row['name']."'
 	
 ");
 	}elseif($_GET['cat'] == 'sciense'){
-		$res = q("
+	$res = q("
 	SELECT * 
 	FROM `news_cat`
 	WHERE `id` = '3'
 ");
-		$row = $res->fetch_assoc();
-		$news = q("
+	$row = $res->fetch_assoc();
+	$news = q("
 	SELECT *
 	FROM `news`
 	WHERE `cat` = '".$row['name']."'
@@ -75,7 +76,7 @@ if(isset($_GET['cat'])){
 	}
 
 }else {
-	///  ПАГИНАЦИЯ ПАГИНАЦИЯ////////
+	///  ПАГИНАЦИЯ ////////
 	///
 	$result = q("
 	SELECT COUNT(*)
@@ -98,10 +99,10 @@ if(isset($_GET['cat'])){
 	$num = ($page*$limit) - $limit;
 
 	$news = q("
- SELECT *
- FROM `news`
- LIMIT $num,$limit
- ");
+     	SELECT *
+		 FROM `news`
+ 		LIMIT $num,$limit
+ 		");
 
 
 }

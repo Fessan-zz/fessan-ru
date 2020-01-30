@@ -21,11 +21,16 @@ if(isset($_POST['add'], $_POST['text'], $_POST['cat'], $_POST['description'], $_
 	}
 
 	// добавление изображения
-	if(!Upload::uploader($_FILES)){
-		$errors['img'] = Upload::$error;
-	}else {
-		$name = Upload::resize($_FILES,800);
+	if(!count($errors)) {
+		Upload::uploader($_FILES);
+		if(!Upload::$error) {
+			$file = Upload::resize(600);
+		}
+		else {
+			$errors = Upload::$error;
+		}
 	}
+
 	if(!count($errors)) {
 		if($_POST['cat'] == 'Politic'){
 			$cat = 1;
@@ -43,7 +48,7 @@ if(isset($_POST['add'], $_POST['text'], $_POST['cat'], $_POST['description'], $_
 	`title`			= '".trimALL(es($_POST['title']))."',
 	`text` 			= '".trimALL(es($_POST['text']))."',
 	`description` 	= '".trimALL(es($_POST['description']))."',
-	 `img`			= '".trimALL(es($name))."',
+	 `img`			= '".trimALL(es($file))."',
 	 `cat_id`		= '$cat',
 	`date`          = NOW()
 	");

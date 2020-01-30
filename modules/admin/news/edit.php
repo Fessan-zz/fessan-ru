@@ -22,11 +22,16 @@ if(isset($_POST['ok'], $_POST['text'], $_POST['cat'], $_POST['description'], $_P
 	}
 
 	// добавление изображения
-	if(!Upload::uploader($_FILES)){
-		$errors['img'] = Upload::$error;
-	}else {
-		$name = Upload::resize($_FILES,800);
+	if(!count($errors)) {
+		Upload::uploader($_FILES);
+		if(!Upload::$error) {
+			$file = Upload::resize(600);
+		}
+		else {
+			$errors = Upload::$error;
+		}
 	}
+
 	if(!count($errors)) {
 
 		if($_POST['cat'] == 'Politic'){
@@ -53,10 +58,10 @@ if(isset($_POST['ok'], $_POST['text'], $_POST['cat'], $_POST['description'], $_P
 
 
 
-		if(!count($errors) && !empty($name)) {
+		if(!count($errors) && !empty($file)) {
 			q("
 			UPDATE `news` SET
-			`img`     = '".es($name)."'
+			`img`     = '".es($file)."'
 			WHERE `id`     = ".(int)$_GET['key2']."
 			
 			");

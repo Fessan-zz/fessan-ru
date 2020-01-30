@@ -1,6 +1,5 @@
 <?php
 
-
 $author = q("
 	SELECT *
 	FROM `books_author`
@@ -19,16 +18,15 @@ $res = q("
 while($res2=$res->fetch_assoc()){
 	$id[]=$res2['book_id'];
 }
-if(isset($id)) {
+// if(isset($id)) {
 	$q = q("
  SELECT *
  FROM `books`
  WHERE `id` IN (".implode(",", $id).")
  
 ");
-	$row2 = $q->fetch_assoc();
-}
-
+//	$row2 = $q->fetch_assoc();
+// }
 
 if(!$author->num_rows){
 

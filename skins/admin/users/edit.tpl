@@ -22,6 +22,10 @@
 
 		<table>
 			<tr>
+				<td width="200">Удалить аватар :</td>
+				<td><input type="checkbox" name="del_ava"></td>
+			</tr>
+			<tr>
 				<td width="200">Отредактировать логин :</td>
 				<td><input  type="text" name="login" value="<?php echo  hc($row['login']); ?>"> </td>
 				<td><span class="span_err"> <?php

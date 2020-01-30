@@ -1,7 +1,6 @@
 <div class="modules_all">
 	<a href="/admin/books">Список Авторов</a>
 
-
 	<div>
 		<div class="clearfix">
 			<div class="news_title">
@@ -23,10 +22,11 @@
 
 		<div class="news_text"> Авторы :
 			<p><?php
+
 				while($row2 = $q->fetch_assoc()){
+
 					echo '<br><a href="/admin/books/author/'.$row2['id'].'">'. $row2['author'].'</a> <br>';
 				}
-
 
 				@hc($row['biografi']) ?></p>
 		</div>

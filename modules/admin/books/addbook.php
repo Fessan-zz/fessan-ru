@@ -25,11 +25,16 @@ if(isset($_POST['add'], $_POST['name'], $_POST['description'], $_POST['coast'], 
 	if(!isset($_POST['author'])) {
 		$errors['author'] = 'Вы не указали автора книги';
 	}
-	if(!Upload::uploader($_FILES)){
-		$errors= Upload::$error;
-	}else {
-		$name = Upload::resize($_FILES,150,200);
+	if(!count($errors)) {
+		Upload::uploader($_FILES);
+		if(!Upload::$error) {
+			$file = Upload::resize(150, 200);
+		}
+		else {
+			$errors = Upload::$error;
+		}
 	}
+
 	// добавление изображения
 
 
@@ -40,7 +45,7 @@ if(isset($_POST['add'], $_POST['name'], $_POST['description'], $_POST['coast'], 
 	`name`			 ='".trimALL(es($_POST['name']))."',
 	`description` 	 = '".trimALL(es($_POST['description']))."',
 	`coast`			 = ".(int)$_POST['coast'].",
-	 `img`			 = '".trimALL(es($name))."',
+	 `img`			 = '".trimALL(es($file))."',
   	`date`           = NOW()
 	");
 		$id = DB::_()->insert_id;

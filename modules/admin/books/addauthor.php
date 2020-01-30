@@ -25,10 +25,14 @@ if(isset($_POST['add'], $_POST['name'], $_POST['age'], $_POST['cat'], $_POST['de
 	}
 
 	// добавление изображения
-	if(!Upload::uploader($_FILES)){
-		$errors= Upload::$error;
-	}else {
-		$name = Upload::resize($_FILES,100,100);
+	if(!count($errors)) {
+		Upload::uploader($_FILES);
+		if(!Upload::$error) {
+			$file = Upload::resize(100, 100);
+		}
+		else {
+			$errors = Upload::$error;
+		}
 	}
 
 	if(!count($errors)) {
@@ -40,7 +44,7 @@ if(isset($_POST['add'], $_POST['name'], $_POST['age'], $_POST['cat'], $_POST['de
 	`cat` 			 = '".trimALL (es($_POST['cat']))."',
 	`description` 	 = '".trimALL(es($_POST['description']))."',
 	`biografi`		 = '".trimALL(es($_POST['biografi']))."',
-	 `img`			 = '".trimALL(es($name))."',
+	 `img`			 = '".trimALL(es($file))."',
   	`date`           = NOW()
 	");
 

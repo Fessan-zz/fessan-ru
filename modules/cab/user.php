@@ -17,7 +17,7 @@ if(!$users->num_rows){
 	}
 
 
-if(isset($_POST['submit'])){ // нажатие кнопки отправить
+if(isset($_POST['submit']) &&  (isset($_POST['password']) || isset($_POST['email']) || isset($_POST['age'] ))){ // нажатие кнопки отправить
 
 	foreach($_POST as $k => $v){
 		$_POST[$k] = trim($v);
@@ -59,8 +59,7 @@ if(isset($_POST['submit'])){ // нажатие кнопки отправить
 
 	if(!count($errors)) {
 		Upload::uploader($_FILES);
-		$tmp_err = Upload::$error;
-		if(!$tmp_err) {
+		if(!Upload::$error) {
 			$file = Upload::resize(100, 100);
 		}
 		else {

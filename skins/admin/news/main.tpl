@@ -5,8 +5,6 @@
 	<br>
 	<?php
 
-
-
 	if(isset($info)){ ?>
 
 	<h1><?php echo $info; ?> </h1>
@@ -56,6 +54,7 @@
 	}?>
 	<input type="submit" name="delete" value="Удалить записи">
 </form>
+
 	<?php
 
 	for($i=1;$i<=$pages;$i++){

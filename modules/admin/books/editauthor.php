@@ -25,11 +25,16 @@ if(isset($_POST['ok'], $_POST['name'], $_POST['age'], $_POST['cat'], $_POST['des
 	}
 	// добавление изображения
 
-	if(!Upload::uploader($_FILES)){
-		$errors= Upload::$error;
-	}else {
-		$name = Upload::resize($_FILES,100,100);
+	if(!count($errors)) {
+		Upload::uploader($_FILES);
+		if(!Upload::$error) {
+			$file = Upload::resize(1500, 200);
+		}
+		else {
+			$errors = Upload::$error;
+		}
 	}
+
 
 	if(!count($errors)) {
 		q("
@@ -45,10 +50,10 @@ if(isset($_POST['ok'], $_POST['name'], $_POST['age'], $_POST['cat'], $_POST['des
 
 
 
-		if(!count($errors) && !empty($name)) {
+		if(!count($errors) && !empty($file)) {
 			q("
 			UPDATE `books_author` SET
-			`img`     = '".es($name)."'
+			`img`     = '".es($file)."'
 			WHERE `id`     = ".(int)$_GET['key2']."
 			
 			");
